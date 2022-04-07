@@ -68,6 +68,18 @@
 
     console.log(arr);
 
+// storing array element in local storage and use forEach loop
+
+let arr=[[1,2],['ram','shyam']];
+localStorage.setItem('arr',JSON.stringify(arr)) //  JSON.stringify is used to convert string to arry
+
+let b=JSON.parse(localStorage.getItem('arr'))  //JSON.parse is used to convert string to array
+// console.log(b) 
+
+b.forEach(function(ele,index){
+    console.log(index)
+    console.log(ele[0])
+});
 
 // -------------------OBJECTS-----------------
 
